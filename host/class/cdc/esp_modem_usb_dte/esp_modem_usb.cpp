@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2022-2023 Espressif Systems (Shanghai) CO LTD
+ * SPDX-FileCopyrightText: 2022-2025 Espressif Systems (Shanghai) CO LTD
  *
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -82,7 +82,10 @@ public:
             .in_buffer_size = config->dte_buffer_size,
             .event_cb = handle_notif,
             .data_cb = handle_rx,
-            .user_arg = this
+            .user_arg = this,
+#ifdef CDC_HOST_SUSPEND_RESUME_API_SUPPORTED
+            .enable_remote_wakeup = false,
+#endif // CDC_HOST_SUSPEND_RESUME_API_SUPPORTED
         };
 
         // Determine Terminal interface index
