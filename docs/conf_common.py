@@ -14,13 +14,14 @@ extensions += [  # Needed as a trigger for running doxygen
                'esp_docs.esp_extensions.run_doxygen',
                ]
 # Languages supported
-languages = ['en']
+languages = ['en', 'zh_CN']
 
 # Project targets (used as URL slugs)
 idf_targets = ['esp32s2', 'esp32s3', 'esp32p4', 'esp32h4']
 
 # GitHub repository information
 github_repo = 'espressif/esp-usb'
+project_homepage = 'https://github.com/espressif/esp-usb'
 
 # Initialize html_context if not already defined
 html_context = {}

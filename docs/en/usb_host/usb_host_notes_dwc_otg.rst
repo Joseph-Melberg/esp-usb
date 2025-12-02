@@ -1,8 +1,6 @@
 USB Host Maintainers Notes (DWC_OTG Controller)
 ===============================================
 
-:link_to_translation:`zh_CN:[中文]`
-
 The {IDF_TARGET_NAME} uses a DesignWare USB 2.0 On-the-Go Controller (henceforth referred to as DWC_OTG in this document) as its underlying hardware controller, where the DWC_OTG operates in Host Mode with Scatter/Gather DMA enabled.
 
 .. note::
