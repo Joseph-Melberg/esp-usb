@@ -15,6 +15,6 @@ Welcome to the ESP-USB Programming Guide.
 
 .. toctree::
    :maxdepth: 1
-   :caption: API Reference
 
-   api-reference/index
+   usb_host
+   usb_device

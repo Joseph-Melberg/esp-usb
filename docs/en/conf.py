@@ -17,9 +17,13 @@ except ImportError:
     sys.path.insert(0, os.path.abspath('../'))
     from conf_common import *  # noqa: F403,F401
 
+import datetime
+
+current_year = datetime.datetime.now().year
+
 # General information about the project.
 project = u'ESP-USB Programming Guide'
-copyright = u'2025 Espressif Systems (Shanghai) CO LTD'
+copyright = '2025 - {}, Espressif Systems (Shanghai) Co., Ltd'.format(current_year)  # noqa: A001
 author = u'Espressif Systems'
 pdf_title = u'ESP-USB Programming Guide'
 
