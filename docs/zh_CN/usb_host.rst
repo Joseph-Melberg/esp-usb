@@ -700,11 +700,23 @@ API 参考
 
 USB 主机库的 API 包含以下头文件，但应用程序调用该 API 时只需 ``#include "usb/usb_host.h"``，就可以包含所有 USB 主机库的头文件。
 
-- `usb/include/usb/usb_host.h` 包含 USB 主机库的函数和类型。
-- `usb/include/usb/usb_helpers.h` 包含与 USB 协议相关的各种辅助函数，如描述符解析等。
-- `usb/include/usb/usb_types_stack.h` 包含在 USB 主机栈的多个层次中使用的类型。
-- `usb/include/usb/usb_types_ch9.h` 包含了与 USB 2.0 规范中第 9 章相关的类型和宏，即描述符和标准请求。
-- `usb/include/usb/usb_types_ch11.h` 包含与 USB2.0 规范第 11 章相关的类型和宏，即集线器规范。
+- `host/usb/include/usb/usb_host.h <https://github.com/espressif/esp-usb/tree/master/host/usb/include/usb/usb_host.h>`__ 包含 USB 主机库的函数和类型。
+- `host/usb/include/usb/usb_helpers.h <https://github.com/espressif/esp-usb/tree/master/host/usb/include/usb/usb_helpers.h>`__ 包含与 USB 协议相关的各种辅助函数，如描述符解析等。
+- `host/usb/include/usb/usb_types_stack.h <https://github.com/espressif/esp-usb/tree/master/host/usb/include/usb/usb_types_stack.h>`__` 包含在 USB 主机栈的多个层次中使用的类型。
+- `host/usb/include/usb/usb_types_ch9.h <https://github.com/espressif/esp-usb/tree/master/host/usb/include/usb/usb_types_ch9.h>`__ 包含了与 USB 2.0 规范中第 9 章相关的类型和宏，即描述符和标准请求。
+- `host/usb/include/usb/usb_types_ch11.h <https://github.com/espressif/esp-usb/tree/master/host/usb/include/usb/usb_types_ch11.h>`__ 包含与 USB2.0 规范第 11 章相关的类型和宏，即集线器规范。
+
+
+.. include-build-file:: inc/usb_host.inc
+
+.. include-build-file:: inc/usb_helpers.inc
+
+.. include-build-file:: inc/usb_types_stack.inc
+
+.. include-build-file:: inc/usb_types_ch9.inc
+
+.. include-build-file:: inc/usb_types_ch11.inc
+
 
 头文件
 ^^^^^^^

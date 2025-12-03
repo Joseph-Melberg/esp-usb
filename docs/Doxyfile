@@ -13,6 +13,10 @@ PROJECT_BRIEF          = "ESP-IDF USB Host and Device Drivers"
 ## and used to include in API reference documentation
 INPUT                  = \
     $(PROJECT_PATH)/host/usb/include/usb/usb_host.h \
+    $(PROJECT_PATH)/host/usb/include/usb/usb_helpers.h \
+    $(PROJECT_PATH)/host/usb/include/usb/usb_types_stack.h \
+    $(PROJECT_PATH)/host/usb/include/usb/usb_types_ch9.h \
+    $(PROJECT_PATH)/host/usb/include/usb/usb_types_ch11.h \
     $(PROJECT_PATH)/device/esp_tinyusb/include/tinyusb.h
 
 WARN_NO_PARAMDOC = YES
@@ -23,7 +27,10 @@ ENABLE_PREPROCESSING   = YES
 MACRO_EXPANSION        = YES
 EXPAND_ONLY_PREDEF     = YES
 PREDEFINED             = \
-    $(ENV_DOXYGEN_DEFINES)
+    $(ENV_DOXYGEN_DEFINES) \
+    __DOXYGEN__=1 \
+    __attribute__(x)= \
+    ESP_STATIC_ASSERT()=
 
 ## Do not complain about not having dot
 ##

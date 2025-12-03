@@ -700,11 +700,23 @@ API Reference
 
 The API of the USB Host Library is separated into the following header files. However, it is sufficient for applications to only ``#include "usb/usb_host.h"`` and all USB Host Library headers will also be included.
 
-- `usb/include/usb/usb_host.h` contains the functions and types of the USB Host Library.
-- `usb/include/usb/usb_helpers.h` contains various helper functions that are related to the USB protocol such as descriptor parsing.
-- `usb/include/usb/usb_types_stack.h` contains types that are used across multiple layers of the USB Host stack.
-- `usb/include/usb/usb_types_ch9.h` contains types and macros related to Chapter 9 of the USB2.0 specification, i.e., descriptors and standard requests.
-- `usb/include/usb/usb_types_ch11.h` contains types and macros related to Chapter 11 of the USB2.0 specification, i.e., hub specifications.
+- `host/usb/include/usb/usb_host.h <https://github.com/espressif/esp-usb/tree/master/host/usb/include/usb/usb_host.h>`__ contains the functions and types of the USB Host Library.
+- `host/usb/include/usb/usb_helpers.h <https://github.com/espressif/esp-usb/tree/master/host/usb/include/usb/usb_helpers.h>`__ contains various helper functions that are related to the USB protocol such as descriptor parsing.
+- `host/usb/include/usb/usb_types_stack.h <https://github.com/espressif/esp-usb/tree/master/host/usb/include/usb/usb_types_stack.h>`__ contains types that are used across multiple layers of the USB Host stack.
+- `host/usb/include/usb/usb_types_ch9.h <https://github.com/espressif/esp-usb/tree/master/host/usb/include/usb/usb_types_ch9.h>`__ contains types and macros related to Chapter 9 of the USB2.0 specification, i.e., descriptors and standard requests.
+- `host/usb/include/usb/usb_types_ch11.h <https://github.com/espressif/esp-usb/tree/master/host/usb/include/usb/usb_types_ch11.h>`__ contains types and macros related to Chapter 11 of the USB2.0 specification, i.e., hub specifications.
+
+
+.. include-build-file:: inc/usb_host.inc
+
+.. include-build-file:: inc/usb_helpers.inc
+
+.. include-build-file:: inc/usb_types_stack.inc
+
+.. include-build-file:: inc/usb_types_ch9.inc
+
+.. include-build-file:: inc/usb_types_ch11.inc
+
 
 Header File
 ^^^^^^^^^^^

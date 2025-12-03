@@ -20,10 +20,15 @@ except ImportError:
 import datetime
 
 current_year = datetime.datetime.now().year
+start_year = 2025
+
+if current_year == start_year:
+    copyright = '{}, Espressif Systems (Shanghai) Co., Ltd'.format(start_year)
+else:
+    copyright = '{} - {}, Espressif Systems (Shanghai) Co., Ltd'.format(start_year, current_year)
 
 # General information about the project.
 project = u'ESP-USB Programming Guide'
-copyright = '2025 - {}, Espressif Systems (Shanghai) Co., Ltd'.format(current_year)  # noqa: A001
 author = u'Espressif Systems'
 pdf_title = u'ESP-USB Programming Guide'
 

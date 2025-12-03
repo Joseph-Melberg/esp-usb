@@ -20,10 +20,15 @@ except ImportError:
 import datetime
 
 current_year = datetime.datetime.now().year
+start_year = 2025
+
+if current_year == start_year:
+    copyright = '{}, 乐鑫信息科技（上海）股份有限公司'.format(start_year)
+else:
+    copyright = '{} - {}, 乐鑫信息科技（上海）股份有限公司'.format(start_year, current_year)
 
 # General information about the project.
 project = u'ESP-USB 编程指南'
-copyright = '2025 - {}, 乐鑫信息科技（上海）股份有限公司'.format(current_year)  # noqa: A001
 author = u'乐鑫信息科技（上海）股份有限公司'
 pdf_title = u'ESP-USB 编程指南'
 
